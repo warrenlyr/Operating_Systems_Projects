@@ -1,0 +1,94 @@
+==3802== Memcheck, a memory error detector
+==3802== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3802== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3802== Command: ./InstaQuack
+==3802== 
+Proxy thread 109369088 - type: Publisher - Executed command: put 2 "https://static.boredpanda.com/blog/wp-content/uploads/2018/07/funny-dog-balloons-ceiling-6-5b5580e05c9ef__700.jpg" "I <0x544d560>
+Proxy thread 109369088 - type: Publisher - Executed command: tired"
+Proxy thread 117761792 - type: Publisher - Executed command: put 3 "https://cdn.pixabay.com/photo/2018/03/07/19/51/animal-3206941_960_720.jpg" "friends <0x544d7d0>
+Proxy thread 117761792 - type: Publisher - Executed command: of
+Topic id: 1	Topic length: 6
+Topic id: 2	Topic length: 6
+Topic id: 3	Topic length: 5
+Proxy thread 100976384 - type: Publisher - Executed command: put 1 "https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg" "Taurus <0x544d2f0>
+Proxy thread 100976384 - type: Publisher - Executed command: Mountains"
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 1000
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Topic id: 1	Topic length: 6
+Topic id: 2	Topic length: 6
+Topic id: 3	Topic length: 5
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 3000
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 126154496 - type: Subscriber - Executed command: get 2
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: sleep 300
+Proxy thread 126154496 - type: Subscriber - Executed command: get 1
+Proxy thread 126154496 - type: Subscriber - Executed command: stop
+Proxy thread 134547200 - type: Subscriber - Executed command: get 2
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 1000
+Proxy thread 134547200 - type: Subscriber - Executed command: get 2
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 3000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 134547200 - type: Subscriber - Executed command: get 2
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 100
+Proxy thread 134547200 - type: Subscriber - Executed command: get 2
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 100
+Proxy thread 134547200 - type: Subscriber - Executed command: get 2
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 3000
+Proxy thread 134547200 - type: Subscriber - Executed command: get 3
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 500
+Proxy thread 134547200 - type: Subscriber - Executed command: get 3
+Proxy thread 134547200 - type: Subscriber - Executed command: sleep 1000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 134547200 - type: Subscriber - Executed command: stop
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 1
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 1
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 50
+Proxy thread 142939904 - type: Subscriber - Executed command: get 2
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 1
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 2
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 5000
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 1
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 2
+Proxy thread 142939904 - type: Subscriber - Executed command: sleep 500
+Proxy thread 142939904 - type: Subscriber - Executed command: get 3
+Proxy thread 142939904 - type: Subscriber - Executed command: stop
+==3802== 
+==3802== HEAP SUMMARY:
+==3802==     in use at exit: 0 bytes in 0 blocks
+==3802==   total heap usage: 51 allocs, 51 frees, 57,960 bytes allocated
+==3802== 
+==3802== All heap blocks were freed -- no leaks are possible
+==3802== 
+==3802== For counts of detected and suppressed errors, rerun with: -v
+==3802== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

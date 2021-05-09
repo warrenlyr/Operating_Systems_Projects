@@ -1,0 +1,255 @@
+==3173== Memcheck, a memory error detector
+==3173== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3173== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3173== Command: ./a.out input.txt
+==3173== 
+total 120
+12 part4.c
+ 8 part3.c
+ 8 part2.c
+ 4 part1.c
+ 4 Makefile
+ 4 log4.txt
+ 8 log3.txt
+ 4 log2.txt
+ 4 log1.txt
+ 4 iobound.c
+12 iobound
+ 4 input.txt
+ 4 cpubound.c
+12 cpubound
+20 a.out
+ 4 ..
+ 4 .
+Error: cannot execute command at [son] 3177
+[parent] 3173
+Child Process: 3177 - Waiting for SIGUSR1...
+Child Process: 3177 - Received for SIGUSR1 - Calling exec()
+Command entered is: invalid name 
+==3177== 
+==3177== HEAP SUMMARY:
+==3177==     in use at exit: 558,248 bytes in 4,165 blocks
+==3177==   total heap usage: 4,178 allocs, 13 frees, 569,400 bytes allocated
+==3177== 
+==3177== LEAK SUMMARY:
+==3177==    definitely lost: 0 bytes in 0 blocks
+==3177==    indirectly lost: 0 bytes in 0 blocks
+==3177==      possibly lost: 0 bytes in 0 blocks
+==3177==    still reachable: 558,248 bytes in 4,165 blocks
+==3177==         suppressed: 0 bytes in 0 blocks
+==3177== Reachable blocks (those to which a pointer was found) are not shown.
+==3177== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==3177== 
+==3177== For counts of detected and suppressed errors, rerun with: -v
+==3177== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+  PID TTY          TIME CMD
+ 3175 pts/0    00:00:00 ls <defunct>
+ 3176 pts/0    00:00:00 sleep
+ 3177 pts/0    00:00:00 memcheck-amd64- <defunct>
+ 3178 pts/0    00:00:00 iobound
+ 3179 pts/0    00:00:00 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3193 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep
+ 3177 pts/0    00:00:00 memcheck-amd64- <defunct>
+ 3178 pts/0    00:00:00 iobound
+ 3179 pts/0    00:00:00 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3195 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep <defunct>
+ 3177 pts/0    00:00:00 memcheck-amd64- <defunct>
+ 3178 pts/0    00:00:00 iobound
+ 3179 pts/0    00:00:00 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3197 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep <defunct>
+ 3178 pts/0    00:00:00 iobound
+ 3179 pts/0    00:00:00 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3199 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep <defunct>
+ 3178 pts/0    00:00:03 iobound
+ 3179 pts/0    00:00:00 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3201 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep <defunct>
+ 3178 pts/0    00:00:03 iobound
+ 3179 pts/0    00:00:03 cpubound
+ 3180 pts/0    00:00:00 iobound
+ 3203 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3176 pts/0    00:00:00 sleep <defunct>
+ 3178 pts/0    00:00:03 iobound
+ 3179 pts/0    00:00:03 cpubound
+ 3180 pts/0    00:00:03 iobound
+ 3205 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:03 iobound
+ 3179 pts/0    00:00:03 cpubound
+ 3180 pts/0    00:00:03 iobound
+ 3207 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:06 iobound
+ 3179 pts/0    00:00:03 cpubound
+ 3180 pts/0    00:00:03 iobound
+ 3219 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:06 iobound
+ 3179 pts/0    00:00:06 cpubound
+ 3180 pts/0    00:00:03 iobound
+ 3226 pts/0    00:00:00 sh
+Process: 3180 - Begining to write to file.
+Process: 3180 - Finished.
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:06 iobound
+ 3179 pts/0    00:00:06 cpubound
+ 3180 pts/0    00:00:05 iobound <defunct>
+ 3233 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:09 iobound
+ 3179 pts/0    00:00:06 cpubound
+ 3180 pts/0    00:00:05 iobound <defunct>
+ 3246 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:09 iobound
+ 3179 pts/0    00:00:09 cpubound
+ 3180 pts/0    00:00:05 iobound <defunct>
+ 3258 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:09 iobound
+ 3179 pts/0    00:00:09 cpubound
+ 3260 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:12 iobound
+ 3179 pts/0    00:00:09 cpubound
+ 3262 pts/0    00:00:00 sh
+Process: 3179 - Begining calculation.
+Process: 3179 - Finished.
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:12 iobound
+ 3179 pts/0    00:00:09 cpubound <defunct>
+ 3264 pts/0    00:00:00 sh
+Process: 3178 - Begining to write to file.
+Process: 3178 - Finished.
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:15 iobound <defunct>
+ 3179 pts/0    00:00:09 cpubound <defunct>
+ 3266 pts/0    00:00:00 sh
+  PID TTY          TIME CMD
+ 3178 pts/0    00:00:15 iobound <defunct>
+ 3268 pts/0    00:00:00 sh
+*** stack smashing detected ***: <unknown> terminated
+==3173== 
+==3173== Process terminating with default action of signal 6 (SIGABRT)
+==3173==    at 0x4E7AE97: raise (raise.c:51)
+==3173==    by 0x4E7C800: abort (abort.c:79)
+==3173==    by 0x4EC5896: __libc_message (libc_fatal.c:181)
+==3173==    by 0x4F70CD0: __fortify_fail_abort (fortify_fail.c:33)
+==3173==    by 0x4F70C91: __stack_chk_fail (stack_chk_fail.c:29)
+==3173==    by 0x109944: main (in /home/warren/Desktop/uoregon-cis415-f21/proj2/a.out)
+[parent] 3173
+
+Sending SIGUSR1 to children
+Parent Process: 3173 - Sending signal: 10 to child process: 3175
+Parent Process: 3173 - Sending signal: 10 to child process: 3176
+Parent Process: 3173 - Sending signal: 10 to child process: 3177
+Parent Process: 3173 - Sending signal: 10 to child process: 3178
+Parent Process: 3173 - Sending signal: 10 to child process: 3179
+Parent Process: 3173 - Sending signal: 10 to child process: 3180
+
+Sending sig SIGSTOP to children
+Parent Process: 3173 - Sending signal: 19 to child process: 3175
+Parent Process: 3173 - Sending signal: 19 to child process: 3176
+Parent Process: 3173 - Sending signal: 19 to child process: 3177
+Parent Process: 3173 - Sending signal: 19 to child process: 3178
+Parent Process: 3173 - Sending signal: 19 to child process: 3179
+Parent Process: 3173 - Sending signal: 19 to child process: 3180
+
+Total commands number: 6
+===========================
+===========================
+Process [3175] is complete, skip
+===========================
+===========================
+Sending sig SIGCONT to child - [3176]
+Setting alarm for 3 seconds to stop child process [3176]
+===========================
+===========================
+Process [3177] is complete, skip
+===========================
+===========================
+Sending sig SIGCONT to child - [3178]
+Setting alarm for 3 seconds to stop child process [3178]
+===========================
+===========================
+Sending sig SIGCONT to child - [3179]
+Setting alarm for 3 seconds to stop child process [3179]
+===========================
+===========================
+Sending sig SIGCONT to child - [3180]
+Setting alarm for 3 seconds to stop child process [3180]
+===========================
+===========================
+Process [3176] is complete, skip
+===========================
+===========================
+Sending sig SIGCONT to child - [3178]
+Setting alarm for 3 seconds to stop child process [3178]
+===========================
+===========================
+Sending sig SIGCONT to child - [3179]
+Setting alarm for 3 seconds to stop child process [3179]
+===========================
+===========================
+Sending sig SIGCONT to child - [3180]
+Setting alarm for 3 seconds to stop child process [3180]
+===========================
+===========================
+Sending sig SIGCONT to child - [3178]
+Setting alarm for 3 seconds to stop child process [3178]
+===========================
+===========================
+Sending sig SIGCONT to child - [3179]
+Setting alarm for 3 seconds to stop child process [3179]
+===========================
+===========================
+Process [3180] is complete, skip
+===========================
+===========================
+Sending sig SIGCONT to child - [3178]
+Setting alarm for 3 seconds to stop child process [3178]
+===========================
+===========================
+Sending sig SIGCONT to child - [3179]
+Setting alarm for 3 seconds to stop child process [3179]
+===========================
+===========================
+Sending sig SIGCONT to child - [3178]
+Setting alarm for 3 seconds to stop child process [3178]
+===========================
+===========================
+Process [3179] is complete, skip
+===========================
+===========================
+Process [3178] is complete, skip
+========================================================
+All peocesses are completed, total completed number: 6
+*** stack smashing detected ***: <unknown> terminated
+This error will be displayed
+But my program has reached the end
+I cannot find the bug
+========================================================
+==3173== 
+==3173== HEAP SUMMARY:
+==3173==     in use at exit: 0 bytes in 0 blocks
+==3173==   total heap usage: 4,191 allocs, 4,191 frees, 570,672 bytes allocated
+==3173== 
+==3173== All heap blocks were freed -- no leaks are possible
+==3173== 
+==3173== For counts of detected and suppressed errors, rerun with: -v
+==3173== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

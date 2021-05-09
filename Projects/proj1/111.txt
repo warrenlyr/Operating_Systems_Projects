@@ -1,0 +1,10 @@
+ls
+pwd
+
+mkdir 111
+cd 111
+pwd
+cd ..
+pwd
+ls
+cat 111.txt

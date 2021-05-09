@@ -1,0 +1,112 @@
+==3100== Memcheck, a memory error detector
+==3100== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3100== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3100== Command: ./a.out input.txt
+==3100== 
+total 112
+12 part4.c
+ 8 part3.c
+ 8 part2.c
+ 4 part1.c
+ 4 Makefile
+ 4 log3.txt
+ 4 log2.txt
+ 4 log1.txt
+ 4 iobound.c
+12 iobound
+ 4 input.txt
+ 4 cpubound.c
+12 cpubound
+20 a.out
+ 4 ..
+ 4 .
+Error: cannot execute command at [son] 3104
+[parent] 3100
+Child Process: 3104 - Waiting for SIGUSR1...
+Child Process: 3104 - Received for SIGUSR1 - Calling exec()
+Command entered is: invalid name 
+==3104== 
+==3104== HEAP SUMMARY:
+==3104==     in use at exit: 558,248 bytes in 4,165 blocks
+==3104==   total heap usage: 4,178 allocs, 13 frees, 569,400 bytes allocated
+==3104== 
+==3104== LEAK SUMMARY:
+==3104==    definitely lost: 0 bytes in 0 blocks
+==3104==    indirectly lost: 0 bytes in 0 blocks
+==3104==      possibly lost: 0 bytes in 0 blocks
+==3104==    still reachable: 558,248 bytes in 4,165 blocks
+==3104==         suppressed: 0 bytes in 0 blocks
+==3104== Reachable blocks (those to which a pointer was found) are not shown.
+==3104== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==3104== 
+==3104== For counts of detected and suppressed errors, rerun with: -v
+==3104== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Process: 3107 - Begining to write to file.
+Process: 3107 - Finished.
+Process: 3106 - Begining calculation.
+Process: 3106 - Finished.
+Process: 3105 - Begining to write to file.
+Process: 3105 - Finished.
+[parent] 3100
+
+Sending SIGUSR1 to children
+Parent Process: 3100 - Sending signal: 10 to child process: 3102
+Parent Process: 3100 - Sending signal: 10 to child process: 3103
+Parent Process: 3100 - Sending signal: 10 to child process: 3104
+Parent Process: 3100 - Sending signal: 10 to child process: 3105
+Parent Process: 3100 - Sending signal: 10 to child process: 3106
+Parent Process: 3100 - Sending signal: 10 to child process: 3107
+
+Sending sig SIGSTOP to children
+Parent Process: 3100 - Sending signal: 19 to child process: 3102
+Parent Process: 3100 - Sending signal: 19 to child process: 3103
+Parent Process: 3100 - Sending signal: 19 to child process: 3104
+Parent Process: 3100 - Sending signal: 19 to child process: 3105
+Parent Process: 3100 - Sending signal: 19 to child process: 3106
+Parent Process: 3100 - Sending signal: 19 to child process: 3107
+
+Total commands number: 6
+Process [3102] is complete, skip
+Sending sig SIGCONT to child - [3103]
+Setting alarm for 3 seconds to stop child process [3103]
+Process [3104] is complete, skip
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Sending sig SIGCONT to child - [3106]
+Setting alarm for 3 seconds to stop child process [3106]
+Sending sig SIGCONT to child - [3107]
+Setting alarm for 3 seconds to stop child process [3107]
+Process [3103] is complete, skip
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Sending sig SIGCONT to child - [3106]
+Setting alarm for 3 seconds to stop child process [3106]
+Sending sig SIGCONT to child - [3107]
+Setting alarm for 3 seconds to stop child process [3107]
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Sending sig SIGCONT to child - [3106]
+Setting alarm for 3 seconds to stop child process [3106]
+Process [3107] is complete, skip
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Sending sig SIGCONT to child - [3106]
+Setting alarm for 3 seconds to stop child process [3106]
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Process [3106] is complete, skip
+Sending sig SIGCONT to child - [3105]
+Setting alarm for 3 seconds to stop child process [3105]
+Process [3105] is complete, skip
+========================================================
+All peocesses are completed, total completed number: 6
+========================================================
+==3100== 
+==3100== HEAP SUMMARY:
+==3100==     in use at exit: 0 bytes in 0 blocks
+==3100==   total heap usage: 4,191 allocs, 4,191 frees, 570,672 bytes allocated
+==3100== 
+==3100== All heap blocks were freed -- no leaks are possible
+==3100== 
+==3100== For counts of detected and suppressed errors, rerun with: -v
+==3100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

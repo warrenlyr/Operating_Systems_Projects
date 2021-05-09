@@ -1,0 +1,83 @@
+==3007== Memcheck, a memory error detector
+==3007== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3007== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3007== Command: ./a.out input.txt
+==3007== 
+total 108
+12 part4.c
+ 8 part3.c
+ 8 part2.c
+ 4 part1.c
+ 4 Makefile
+ 4 log2.txt
+ 4 log1.txt
+ 4 iobound.c
+12 iobound
+ 4 input.txt
+ 4 cpubound.c
+12 cpubound
+20 a.out
+ 4 ..
+ 4 .
+Error: cannot execute command at [son] 3011
+[parent] 3007
+Child Process: 3011 - Waiting for SIGUSR1...
+Child Process: 3011 - Received for SIGUSR1 - Calling exec()
+Command entered is: invalid name 
+==3011== 
+==3011== HEAP SUMMARY:
+==3011==     in use at exit: 558,248 bytes in 4,165 blocks
+==3011==   total heap usage: 4,178 allocs, 13 frees, 569,400 bytes allocated
+==3011== 
+==3011== LEAK SUMMARY:
+==3011==    definitely lost: 0 bytes in 0 blocks
+==3011==    indirectly lost: 0 bytes in 0 blocks
+==3011==      possibly lost: 0 bytes in 0 blocks
+==3011==    still reachable: 558,248 bytes in 4,165 blocks
+==3011==         suppressed: 0 bytes in 0 blocks
+==3011== Reachable blocks (those to which a pointer was found) are not shown.
+==3011== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==3011== 
+==3011== For counts of detected and suppressed errors, rerun with: -v
+==3011== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Process: 3014 - Begining to write to file.
+Process: 3014 - Finished.
+Process: 3013 - Begining calculation.
+Process: 3013 - Finished.
+Process: 3012 - Begining to write to file.
+Process: 3012 - Finished.
+[parent] 3007
+
+Sending SIGUSR1 to children
+Parent Process: 3007 - Sending signal: 10 to child process: 3009
+Parent Process: 3007 - Sending signal: 10 to child process: 3010
+Parent Process: 3007 - Sending signal: 10 to child process: 3011
+Parent Process: 3007 - Sending signal: 10 to child process: 3012
+Parent Process: 3007 - Sending signal: 10 to child process: 3013
+Parent Process: 3007 - Sending signal: 10 to child process: 3014
+
+Sending sig SIGSTOP to children
+Parent Process: 3007 - Sending signal: 19 to child process: 3009
+Parent Process: 3007 - Sending signal: 19 to child process: 3010
+Parent Process: 3007 - Sending signal: 19 to child process: 3011
+Parent Process: 3007 - Sending signal: 19 to child process: 3012
+Parent Process: 3007 - Sending signal: 19 to child process: 3013
+Parent Process: 3007 - Sending signal: 19 to child process: 3014
+
+Sending sig SIGCONT to children
+Parent Process: 3007 - Sending signal: 18 to child process: 3009
+Parent Process: 3007 - Sending signal: 18 to child process: 3010
+Parent Process: 3007 - Sending signal: 18 to child process: 3011
+Parent Process: 3007 - Sending signal: 18 to child process: 3012
+Parent Process: 3007 - Sending signal: 18 to child process: 3013
+Parent Process: 3007 - Sending signal: 18 to child process: 3014
+
+==3007== 
+==3007== HEAP SUMMARY:
+==3007==     in use at exit: 0 bytes in 0 blocks
+==3007==   total heap usage: 4,190 allocs, 4,190 frees, 570,648 bytes allocated
+==3007== 
+==3007== All heap blocks were freed -- no leaks are possible
+==3007== 
+==3007== For counts of detected and suppressed errors, rerun with: -v
+==3007== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
